@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;   
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: rgb(45, 202, 45);
+}
+
+.dark-green {
+    background-color: rgb(6, 121, 6);
+}
+
+.cell-withX::before {
+    content: "\2716";
+    font-size: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-withO::before {
+    content: "O";
+    font-size: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset {
+    margin-top: 20px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    background-color: rgb(45, 202, 45);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.won {
+    margin-top: 20px;
+    font-size: 25px;
+}
